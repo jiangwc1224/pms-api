@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgresql:
+    container_name: postgres-pms
+    image: postgres:12.8-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PMS_DB_DATABASE: ${PMS_DB_DATABASE}
+      PMS_DB_USER: ${PMS_DB_USER}
+      PMS_DB_PASSWORD: ${PMS_DB_PASSWORD}
+    volumes:
+      - ./src/main/resources/docker/postgresql:/docker-entrypoint-initdb.d
