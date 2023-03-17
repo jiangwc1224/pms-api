@@ -38,6 +38,10 @@ public class UserImport extends AbstractAggregateRoot<UserImport, UserImport.Use
 	@EmbeddedId
 	private UserNoVO userNo;
 
+	/** ユーザ名 */
+	@Column(length = 256)
+	private String userName;
+
 	/** バージョン */
 	@Version
 	private int version;
