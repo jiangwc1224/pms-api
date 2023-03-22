@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.UUID;
 
+import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
@@ -17,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import com.hyron.pms.common.jpa.AbstractAggregateRoot;
-import com.hyron.pms.common.vo.ValidPeriod;
+import com.hyron.pms.common.vo.PeriodVO;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -49,8 +50,10 @@ public class LoginUser extends AbstractAggregateRoot<LoginUser, LoginUser.LoginU
 	@Column(length = 256)
 	private String password;
 
-	/** 有効期間 */
-	private ValidPeriod validPeriod;
+	/** 期間 */
+	@AttributeOverride(name = "startDate", column = @Column(name = "validStartDate", nullable = false))
+	@AttributeOverride(name = "endDate", column = @Column(name = "validEndDate", nullable = false))
+	private PeriodVO validPeriod;
 
 	/** 中止日 */
 	@Column
