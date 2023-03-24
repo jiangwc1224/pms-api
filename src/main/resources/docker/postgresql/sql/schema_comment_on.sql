@@ -13,4 +13,27 @@ comment on column login_user.initial_create_date_and_time is '初期登録日時
 comment on column login_user.last_update_user_code is '最終更新担当者';
 comment on column login_user.last_update_date_and_time is '最終更新日時';
 
+/** month_evaluation*/
+comment on table month_evaluation is '月末評価';
+comment on column month_evaluation.month_evaluation_id is '月末評価ID';
+comment on column month_evaluation.evaluation_month is '評価月';
+comment on column month_evaluation.project_summary is '所属プロジェクト';
+comment on column month_evaluation.evaluated_user is '被評価者';
+comment on column month_evaluation.assessor is '評価者';
+comment on column month_evaluation.general_evaluation is '総評';
+comment on column month_evaluation.working_attitude is '作業態度';
+comment on column month_evaluation.working_attitude_evaluation is '作業態度評';
+comment on column month_evaluation.working_quality is '作業品質';
+comment on column month_evaluation.working_quality_evaluation is '作業品質評';
+comment on column month_evaluation.working_progress is '作業進捗';
+comment on column month_evaluation.working_progress_evaluation is '作業進捗評';
+comment on column month_evaluation.communication is '交流';
+comment on column month_evaluation.communication_evaluation is '交流評';
+comment on column month_evaluation.others is 'その他';
+comment on column month_evaluation.public_flag is '公開フラグ';
+comment on column month_evaluation.version is 'バージョン';
+
+
+
+
 
