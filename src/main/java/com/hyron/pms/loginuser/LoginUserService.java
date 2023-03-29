@@ -33,7 +33,7 @@ public class LoginUserService {
 	public LoginUser getLoginUserForLogin(String userNo,String password) {
 		LocalDate currentDate = LocalDate.now();
 		return forEntity(LoginUser.class) // QuerySupportインスタンスを設立して、インスタンスのパラメータはentity.classです。
-				.find(() -> this.loginUsers.findByUserNoAndPasswordAndValidPeriod_ValidStartDayLessThanEqualAndValidPeriod_ValidEndDayGreaterThanEqualAndCancelFlagIsFalse(userNo, password,currentDate,currentDate)); // データ取得の時、取得がないの場合はnew
+				.find(() -> this.loginUsers.findByUserNoAndPasswordAndValidPeriod_StartDayLessThanEqualAndValidPeriod_EndDayGreaterThanEqualAndCancelFlagIsFalse(userNo, password,currentDate,currentDate)); // データ取得の時、取得がないの場合はnew
 																		// ResponseStatusException(HttpStatus.NOT_FOUND)をスローする。
 	}
 

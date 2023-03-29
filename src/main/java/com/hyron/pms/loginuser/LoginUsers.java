@@ -21,6 +21,6 @@ public interface LoginUsers extends JpaRepository<LoginUser, LoginUser.LoginUser
      * @param currentDate2 現在日付
      * @return ログインユーザ
      */
-    Optional<LoginUser> findByUserNoAndPasswordAndValidPeriod_ValidStartDayLessThanEqualAndValidPeriod_ValidEndDayGreaterThanEqualAndCancelFlagIsFalse(@NonNull String userNo,
+    Optional<LoginUser> findByUserNoAndPasswordAndValidPeriod_StartDayLessThanEqualAndValidPeriod_EndDayGreaterThanEqualAndCancelFlagIsFalse(@NonNull String userNo,
                                                                                                                                                  @NonNull String password, LocalDate currentDate1, LocalDate currentDate2);
 }

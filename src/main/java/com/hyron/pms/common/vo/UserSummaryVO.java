@@ -1,6 +1,7 @@
 package com.hyron.pms.common.vo;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Value;
 import org.jmolecules.ddd.annotation.ValueObject;
@@ -12,22 +13,24 @@ import java.io.Serializable;
 /**
  * 共通VO：ユーザ概要
  *
- * @author xlv.xing
+ * @author caixueping
  */
 @ValueObject
 @Embeddable
 @Value
 @NoArgsConstructor(force = true, access = AccessLevel.PRIVATE)
+@AllArgsConstructor(staticName = "of")
 public class UserSummaryVO implements Serializable {
 
-    private static final long serialVersionUID = -8089220684871224371L;
+    /** シリアルバージョンID */
+    private static final long serialVersionUID = -3269429656107591153L;
+
     /** ユーザNo */
     @Column(length = 6)
-    private String leaderNo;
+    private final String userNo;
 
     /** ユーザ名 */
     @Column(length = 256)
-    private String leaderName;
-
+    private final String userName;
 
 }
