@@ -1,7 +1,6 @@
 package com.hyron.pms.userimport.presentation;
 
 
-import com.hyron.pms.userimport.Sex;
 import org.springframework.hateoas.server.ExposesResourceFor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

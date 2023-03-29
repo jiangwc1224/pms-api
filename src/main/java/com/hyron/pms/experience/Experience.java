@@ -1,5 +1,7 @@
 package com.hyron.pms.experience;
 
+import com.hyron.pms.common.enums.DutyKubun;
+import com.hyron.pms.common.enums.MachineType;
 import com.hyron.pms.common.vo.PeriodVO;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

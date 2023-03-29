@@ -1,5 +1,6 @@
 package com.hyron.pms.career;
 
+import com.hyron.pms.common.enums.JobLevel;
 import com.hyron.pms.common.vo.PeriodVO;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

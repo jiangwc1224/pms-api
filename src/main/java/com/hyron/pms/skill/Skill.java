@@ -1,5 +1,6 @@
 package com.hyron.pms.skill;
 
+import com.hyron.pms.common.enums.MasteryLevel;
 import com.hyron.pms.common.vo.TechnologySummaryVO;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

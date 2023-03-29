@@ -1,6 +1,6 @@
 package com.hyron.pms.common.vo;
 
-import com.hyron.pms.userimport.Qualification;
+import com.hyron.pms.common.enums.Qualification;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.Value;
@@ -8,6 +8,8 @@ import org.jmolecules.ddd.annotation.ValueObject;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.io.Serializable;
 import java.time.YearMonth;
 
@@ -35,6 +37,7 @@ public class AcademicCareerVO implements Serializable {
     private String subjectName;
 
     /** 資格称号 */
+    @Enumerated(EnumType.ORDINAL)
     private Qualification qualification;
 
 }

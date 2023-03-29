@@ -2,18 +2,14 @@ package com.hyron.pms.userimport;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 import javax.persistence.*;
 
-import com.hyron.pms.career.Career;
-import com.hyron.pms.career.JobLevel;
+import com.hyron.pms.common.enums.*;
 import com.hyron.pms.common.vo.AcademicCareerVO;
 import com.hyron.pms.common.vo.DeptSummaryVO;
 import com.hyron.pms.common.vo.ProjectSummaryVO;
 import com.hyron.pms.common.vo.UserSummaryVO;
-import com.hyron.pms.experience.Experience;
-import com.hyron.pms.skill.Skill;
 import lombok.*;
 import org.jmolecules.ddd.annotation.ValueObject;
 import org.jmolecules.ddd.types.Identifier;

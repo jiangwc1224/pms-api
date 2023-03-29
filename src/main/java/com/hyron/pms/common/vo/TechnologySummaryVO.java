@@ -1,6 +1,6 @@
 package com.hyron.pms.common.vo;
 
-import com.hyron.pms.userimport.TechnologyType;
+import com.hyron.pms.common.enums.TechnologyType;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.Value;

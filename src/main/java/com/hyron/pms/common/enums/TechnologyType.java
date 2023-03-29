@@ -1,4 +1,4 @@
-package com.hyron.pms.userimport;
+package com.hyron.pms.common.enums;
 
 import lombok.Getter;
 
