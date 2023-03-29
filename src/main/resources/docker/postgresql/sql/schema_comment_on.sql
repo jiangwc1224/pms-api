@@ -53,7 +53,7 @@ comment on column dept.dept_no is '部門No';
 comment on column dept.dept_name is '部門名';
 comment on column dept.dept_num is '部門人数';
 comment on column dept.leader_no is 'ユーザNo';
-comment on column dept.leader_ame is 'ユーザ名';
+comment on column dept.leader_name is 'ユーザ名';
 comment on column dept.dept_description is '部門の説明';
 comment on column dept.version is 'バージョン';
 /** month_evaluation*/

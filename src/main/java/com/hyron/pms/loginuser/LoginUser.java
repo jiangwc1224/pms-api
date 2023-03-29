@@ -51,8 +51,8 @@ public class LoginUser extends AbstractAggregateRoot<LoginUser, LoginUser.LoginU
 	private String password;
 
 	/** 期間 */
-	@AttributeOverride(name = "startDate", column = @Column(name = "validStartDate", nullable = false))
-	@AttributeOverride(name = "endDate", column = @Column(name = "validEndDate", nullable = false))
+	@AttributeOverride(name = "startDay", column = @Column(name = "validStartDate", nullable = false))
+	@AttributeOverride(name = "endDay", column = @Column(name = "validEndDate", nullable = false))
 	private PeriodVO validPeriod;
 
 	/** 中止日 */

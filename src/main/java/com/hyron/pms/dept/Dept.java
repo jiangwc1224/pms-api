@@ -42,7 +42,8 @@ public class Dept extends AbstractAggregateRoot<Dept, Dept.DeptNoVO>
     /**
      * 部長
      */
-    @Column
+    @AttributeOverride(name = "userNo", column = @Column(name = "leaderNo", nullable = false))
+    @AttributeOverride(name = "userName", column = @Column(name = "leaderName", nullable = false))
     private UserSummaryVO deptLeader;
 
     /**

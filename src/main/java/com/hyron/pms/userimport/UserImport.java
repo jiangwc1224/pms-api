@@ -132,6 +132,8 @@ public class UserImport extends AbstractAggregateRoot<UserImport, UserImport.Use
     /**
      * 所属リーダー
      */
+    @AttributeOverride(name = "userNo", column = @Column(name = "leaderNo", nullable = false))
+    @AttributeOverride(name = "userName", column = @Column(name = "leaderName", nullable = false))
     private UserSummaryVO leader;
 
     /**
