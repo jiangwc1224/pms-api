@@ -1,19 +1,16 @@
 package com.hyron.pms.common.vo;
 
-import java.io.Serializable;
-import java.time.LocalDate;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-
-import org.jmolecules.ddd.annotation.ValueObject;
-import org.springframework.util.Assert;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.Value;
+import org.jmolecules.ddd.annotation.ValueObject;
+import org.springframework.util.Assert;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import java.io.Serializable;
+import java.time.LocalDate;
 
 /**
  * 共通VO：期間
